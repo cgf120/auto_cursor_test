@@ -56,3 +56,16 @@
 2025-08-06 11:22:36,184 - INFO - Fixing file permissions for Linux...
 2025-08-06 11:22:36,185 - INFO - File permissions fixed successfully
 2025-08-06 11:22:36,185 - INFO - Migration completed. Report saved to: /home/ubuntu/demo_linux_comfyui/migration_report.txt
+2025-08-06 11:30:51,684 - INFO - Importing migration package: demo_migration_package.zip
+2025-08-06 11:30:51,686 - INFO - Package created on: /workspace
+2025-08-06 11:30:51,686 - INFO - Migrating files from /tmp/tmp53hjmin3 to /home/ubuntu/demo_linux_comfyui
+2025-08-06 11:30:51,688 - INFO - Adding Linux-specific files...
+2025-08-06 11:30:51,688 - INFO - Added Linux file: run_linux.sh
+2025-08-06 11:30:51,688 - INFO - Added Linux file: install_dependencies.sh
+2025-08-06 11:30:51,688 - INFO - Migration completed: 10 files migrated
+2025-08-06 11:30:51,688 - INFO - Migrating configuration files...
+2025-08-06 11:30:51,688 - INFO - Migrated config file: config.json
+2025-08-06 11:30:51,688 - INFO - Migrated config file: user_config.json
+2025-08-06 11:30:51,689 - INFO - Fixing file permissions for Linux...
+2025-08-06 11:30:51,689 - INFO - File permissions fixed successfully
+2025-08-06 11:30:51,689 - INFO - Migration completed. Report saved to: /home/ubuntu/demo_linux_comfyui/migration_report.txt

@@ -1,6 +1,11 @@
-# ComfyUI Windows to Linux Migration Tool
+# ComfyUI Cross-Platform Migration Tool
 
-这是一个专门用于将ComfyUI从Windows系统迁移到Linux系统的工具。该工具会自动处理路径转换、文件权限、配置文件更新等迁移过程中的常见问题。
+这是一个专门用于将ComfyUI在Windows和Linux系统之间迁移的工具。该工具支持两种使用场景：
+
+1. **Windows用户**：创建迁移包，然后传输到Linux系统
+2. **Linux用户**：导入从Windows传输过来的迁移包
+
+工具会自动处理路径转换、文件权限、配置文件更新等迁移过程中的常见问题。
 
 ## 功能特性
 
@@ -17,6 +22,37 @@
 - Python 3.7+
 - 足够的磁盘空间 (建议至少10GB可用空间)
 
+## 使用场景
+
+### 场景1：Windows用户创建迁移包
+
+在Windows系统上运行工具，创建迁移包：
+
+```bash
+# 创建迁移包
+python comfyui_migration_tool.py C:\path\to\comfyui --create-package migration_package.zip
+
+# 或者使用默认包名
+python comfyui_migration_tool.py C:\path\to\comfyui --create-package
+```
+
+然后将生成的zip文件传输到Linux系统。
+
+### 场景2：Linux用户导入迁移包
+
+在Linux系统上运行工具，导入迁移包：
+
+```bash
+# 导入迁移包到默认位置 (~/ComfyUI)
+python3 comfyui_migration_tool.py migration_package.zip --mode linux_import
+
+# 导入到指定位置
+python3 comfyui_migration_tool.py migration_package.zip --mode linux_import -t /home/user/custom/comfyui
+
+# 预览模式
+python3 comfyui_migration_tool.py migration_package.zip --mode linux_import --dry-run
+```
+
 ## 安装和使用
 
 ### 1. 下载工具
@@ -29,25 +65,43 @@ cd comfyui-migration-tool
 
 ### 2. 运行迁移
 
-#### 基本用法
+#### Windows用户（创建迁移包）
 
 ```bash
-# 迁移到默认位置 (~/ComfyUI)
-python3 comfyui_migration_tool.py /path/to/windows/comfyui
+# 创建迁移包
+python comfyui_migration_tool.py C:\path\to\comfyui --create-package
 
-# 迁移到指定位置
-python3 comfyui_migration_tool.py /path/to/windows/comfyui -t /home/user/custom/comfyui
+# 指定包名
+python comfyui_migration_tool.py C:\path\to\comfyui --create-package my_comfyui_package.zip
 
-# 预览模式 (不实际迁移)
-python3 comfyui_migration_tool.py /path/to/windows/comfyui --dry-run
+# 预览模式
+python comfyui_migration_tool.py C:\path\to\comfyui --create-package --dry-run
+```
 
-# 详细输出
-python3 comfyui_migration_tool.py /path/to/windows/comfyui -v
+#### Linux用户（导入迁移包）
+
+```bash
+# 导入迁移包
+python3 comfyui_migration_tool.py migration_package.zip --mode linux_import
+
+# 导入到指定位置
+python3 comfyui_migration_tool.py migration_package.zip --mode linux_import -t /home/user/custom/comfyui
+
+# 预览模式
+python3 comfyui_migration_tool.py migration_package.zip --mode linux_import --dry-run
 ```
 
 #### 参数说明
 
+**Windows模式参数：**
 - `source_path`: Windows ComfyUI安装路径 (必需)
+- `--create-package`: 创建迁移包 (必需)
+- `--dry-run`: 预览模式，不实际修改文件
+- `-v, --verbose`: 详细输出模式
+
+**Linux模式参数：**
+- `source_path`: 迁移包文件路径 (必需)
+- `--mode linux_import`: 指定为Linux导入模式 (必需)
 - `-t, --target`: Linux目标路径 (可选，默认为 ~/ComfyUI)
 - `--dry-run`: 预览模式，不实际修改文件
 - `-v, --verbose`: 详细输出模式
