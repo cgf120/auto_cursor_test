@@ -1,0 +1,33 @@
+{
+  "model_paths": {
+    "checkpoints": "/home/user/ComfyUI/models/checkpoints",
+    "loras": "/home/user/ComfyUI/models/loras",
+    "vae": "/home/user/ComfyUI/models/vae",
+    "embeddings": "/home/user/ComfyUI/models/embeddings",
+    "controlnet": "/home/user/ComfyUI/models/controlnet",
+    "upscale_models": "/home/user/ComfyUI/models/upscale_models"
+  },
+  "output_path": "/home/user/ComfyUI/output",
+  "input_path": "/home/user/ComfyUI/input",
+  "temp_path": "/home/user/ComfyUI/temp",
+  "custom_nodes_path": "/home/user/ComfyUI/custom_nodes",
+  "extra_model_paths": {
+    "additional_checkpoints": "/mnt/external/models/checkpoints",
+    "additional_loras": "/mnt/external/models/loras"
+  },
+  "server_settings": {
+    "listen": "0.0.0.0",
+    "port": 8188,
+    "enable_cors_header": false,
+    "max_upload_size": 100
+  },
+  "gpu_settings": {
+    "use_cuda": true,
+    "use_cpu": false,
+    "precision": "normal"
+  },
+  "memory_settings": {
+    "max_models": 3,
+    "max_vram": 0
+  }
+}

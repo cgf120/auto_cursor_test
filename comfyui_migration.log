@@ -1,0 +1,58 @@
+2025-08-06 11:21:33,992 - INFO - Analyzing source ComfyUI installation: /tmp/tmptum4pkbq/windows_comfyui
+2025-08-06 11:21:33,993 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:21:33,993 - INFO - Analyzing source ComfyUI installation: /tmp/tmptum4pkbq/windows_comfyui
+2025-08-06 11:21:33,993 - INFO - DRY RUN MODE - No files will be modified
+2025-08-06 11:21:33,993 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:21:33,993 - INFO - Analyzing source ComfyUI installation: /tmp/tmptum4pkbq/windows_comfyui
+2025-08-06 11:21:33,994 - INFO - Migrating files from /tmp/tmptum4pkbq/windows_comfyui to /tmp/tmptum4pkbq/linux_comfyui
+2025-08-06 11:21:33,995 - INFO - Adding Linux-specific files...
+2025-08-06 11:21:33,995 - INFO - Added Linux file: run_linux.sh
+2025-08-06 11:21:33,995 - INFO - Added Linux file: install_dependencies.sh
+2025-08-06 11:21:33,995 - INFO - Migration completed: 6 files migrated
+2025-08-06 11:21:33,995 - INFO - Migrating configuration files...
+2025-08-06 11:21:33,995 - INFO - Migrated config file: config.json
+2025-08-06 11:21:33,996 - INFO - Migrated config file: user_config.json
+2025-08-06 11:21:33,996 - INFO - Fixing file permissions for Linux...
+2025-08-06 11:21:33,996 - INFO - File permissions fixed successfully
+2025-08-06 11:21:33,996 - INFO - Migration completed. Report saved to: /tmp/tmptum4pkbq/linux_comfyui/migration_report.txt
+2025-08-06 11:21:51,045 - INFO - Analyzing source ComfyUI installation: /tmp/tmple9aph2c/windows_comfyui
+2025-08-06 11:21:51,046 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:21:51,046 - INFO - Analyzing source ComfyUI installation: /tmp/tmple9aph2c/windows_comfyui
+2025-08-06 11:21:51,047 - INFO - DRY RUN MODE - No files will be modified
+2025-08-06 11:21:51,047 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:21:51,047 - INFO - Analyzing source ComfyUI installation: /tmp/tmple9aph2c/windows_comfyui
+2025-08-06 11:21:51,047 - INFO - Migrating files from /tmp/tmple9aph2c/windows_comfyui to /tmp/tmple9aph2c/linux_comfyui
+2025-08-06 11:21:51,049 - INFO - Adding Linux-specific files...
+2025-08-06 11:21:51,049 - INFO - Added Linux file: run_linux.sh
+2025-08-06 11:21:51,049 - INFO - Added Linux file: install_dependencies.sh
+2025-08-06 11:21:51,049 - INFO - Migration completed: 6 files migrated
+2025-08-06 11:21:51,049 - INFO - Migrating configuration files...
+2025-08-06 11:21:51,049 - INFO - Migrated config file: config.json
+2025-08-06 11:21:51,049 - INFO - Migrated config file: user_config.json
+2025-08-06 11:21:51,049 - INFO - Fixing file permissions for Linux...
+2025-08-06 11:21:51,050 - INFO - File permissions fixed successfully
+2025-08-06 11:21:51,050 - INFO - Migration completed. Report saved to: /tmp/tmple9aph2c/linux_comfyui/migration_report.txt
+2025-08-06 11:22:21,837 - INFO - Analyzing source ComfyUI installation: /tmp/tmp704sb4tr/demo_windows_comfyui
+2025-08-06 11:22:21,837 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:22:21,837 - INFO - Analyzing source ComfyUI installation: /tmp/tmp704sb4tr/demo_windows_comfyui
+2025-08-06 11:22:21,837 - ERROR - Source path does not exist
+2025-08-06 11:22:21,837 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:22:21,837 - INFO - Analyzing source ComfyUI installation: /tmp/tmp704sb4tr/demo_windows_comfyui
+2025-08-06 11:22:21,837 - ERROR - Source path does not exist
+2025-08-06 11:22:36,180 - INFO - Analyzing source ComfyUI installation: /tmp/tmpc0hx8vfc/demo_windows_comfyui
+2025-08-06 11:22:36,181 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:22:36,181 - INFO - Analyzing source ComfyUI installation: /tmp/tmpc0hx8vfc/demo_windows_comfyui
+2025-08-06 11:22:36,181 - INFO - DRY RUN MODE - No files will be modified
+2025-08-06 11:22:36,181 - INFO - Starting ComfyUI migration process...
+2025-08-06 11:22:36,181 - INFO - Analyzing source ComfyUI installation: /tmp/tmpc0hx8vfc/demo_windows_comfyui
+2025-08-06 11:22:36,182 - INFO - Migrating files from /tmp/tmpc0hx8vfc/demo_windows_comfyui to /home/ubuntu/demo_linux_comfyui
+2025-08-06 11:22:36,184 - INFO - Adding Linux-specific files...
+2025-08-06 11:22:36,184 - INFO - Added Linux file: run_linux.sh
+2025-08-06 11:22:36,184 - INFO - Added Linux file: install_dependencies.sh
+2025-08-06 11:22:36,184 - INFO - Migration completed: 10 files migrated
+2025-08-06 11:22:36,184 - INFO - Migrating configuration files...
+2025-08-06 11:22:36,184 - INFO - Migrated config file: config.json
+2025-08-06 11:22:36,184 - INFO - Migrated config file: user_config.json
+2025-08-06 11:22:36,184 - INFO - Fixing file permissions for Linux...
+2025-08-06 11:22:36,185 - INFO - File permissions fixed successfully
+2025-08-06 11:22:36,185 - INFO - Migration completed. Report saved to: /home/ubuntu/demo_linux_comfyui/migration_report.txt
