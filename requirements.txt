@@ -1,0 +1,23 @@
+# ComfyUI Migration Tool Dependencies
+# ===================================
+
+# Core dependencies (should be available in most Python installations)
+# No external dependencies required for the migration tool itself
+
+# Optional dependencies for enhanced functionality
+# These are not required for basic migration but may be useful
+
+# For better JSON handling (optional)
+# jsonschema>=3.2.0
+
+# For better path handling (optional)
+# pathlib2>=2.3.0; python_version < "3.4"
+
+# For better logging (optional)
+# colorlog>=4.7.0
+
+# For progress bars (optional)
+# tqdm>=4.64.0
+
+# Note: The migration tool uses only Python standard library modules
+# and should work with Python 3.7+ without additional dependencies.
